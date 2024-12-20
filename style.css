@@ -1,0 +1,220 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+/* Navbar */
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #161b22;
+  border-bottom: 1px solid #333;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-toggle {
+  font-size: 1.5rem;
+  color: #e0e0e0;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.logo {
+  width: 40px;
+}
+
+.dashboard-title {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #0d1117;
+  border-radius: 5px;
+  margin-left: 1rem;
+  padding: 0.3rem;
+}
+
+.search-icon {
+  color: #888;
+  margin: 0 0.5rem;
+}
+
+.search-bar {
+  width: 200px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #e0e0e0;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon-button {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #444;
+  border-radius: 5px;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background-color: #444;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #161b22;
+  border: 1px solid #444;
+  border-radius: 5px;
+  top: 45px;
+  right: 0;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content li {
+  list-style: none;
+  display: flex; /* Aligns icon and text in one line */
+  align-items: center; /* Vertically centers items */
+}
+
+.dropdown-content li a {
+  display: flex; /* Aligns icon and text in one line */
+  align-items: center; /* Vertically centers items */
+  padding: 0.5rem 1rem;
+  color: #e0e0e0;
+  text-decoration: none;
+  gap: 0.5rem; /* Adds space between the icon and text */
+}
+
+.dropdown-content li a i {
+  color: #58a6ff; /* Adds a blue color to the icons */
+}
+
+.dropdown-content li a:hover {
+  background-color: #444;
+}
+
+/* Main Content */
+.main-content {
+  display: flex;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.saved-repositories {
+  flex: 3;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.trending-item h3:hover {
+  cursor: pointer;
+  color: skyblue;
+}
+.trending-repositories {
+  flex: 7;
+  background-color: #0d1117;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.trending-header {
+  display: flex; /* Use flexbox for horizontal alignment */
+  align-items: center; /* Align items vertically in the center */
+  gap: 0.5rem; /* Add some spacing between the icon and text */
+}
+
+.trending-header i {
+  color: #58a6ff; /* Style the icon color */
+  font-size: 1.5rem; /* Adjust icon size */
+}
+
+.trending-header h4 {
+  margin: 0; /* Remove default margin from h4 */
+  font-size: 1rem; /* Adjust font size */
+  color: #e0e0e0; /* Set the text color */
+}
+
+.divider {
+  width: 1px;
+  background-color: #444;
+  margin: 0 1rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-button {
+  padding: 0.5rem 1rem;
+  background-color: #149911;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new-button:hover {
+  background-color: #256d1b;
+}
+
+.repository-item,
+.trending-item {
+  margin-bottom: 1rem;
+}
+
+.trending-item .btn {
+  padding: 0.5rem 1rem;
+  background-color: #58a6ff;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.trending-item .btn:hover {
+  background-color: #1f6feb;
+}
+
+/* Footer */
+footer.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #161b22;
+  color: #888;
+  margin-top: 1rem;
+}

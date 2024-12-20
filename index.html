@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/github-mark-white.svg" />
+
+    <title>GitHub Clone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="navbar-left">
+        <i class="fas fa-bars sidebar-toggle"></i>
+        <img src="/github-mark-white.svg" alt="GitHub Logo" class="logo" />
+        <span class="dashboard-title">Dashboard</span>
+      </div>
+      <div class="navbar-right">
+        <div class="search-container">
+          <i class="fas fa-search search-icon"></i>
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Type / to search"
+          />
+        </div>
+
+        <div class="dropdown">
+          <div class="icon-button"><i class="fa-solid fa-plus"></i></div>
+          <ul class="dropdown-content">
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-folder-plus"></i> New Repositories</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-download"></i> Import Repositories</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-laptop-code"></i> New Codespace</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-file-code"></i> New gist</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-users"></i> New Organization</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-tasks"></i> New Project</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="icon-button"><i class="fa-regular fa-circle-dot"></i></div>
+        <div class="icon-button">
+          <i class="fa-solid fa-code-pull-request"></i>
+        </div>
+        <div class="icon-button"><i class="fa-solid fa-bell"></i></div>
+        <div class="icon-button">
+          <i class="fas fa-user-circle nav-icon"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Left Section: Saved Repositories -->
+      <section class="saved-repositories">
+        <div class="section-header">
+          <h2>Top Repositories</h2>
+          <button class="new-button">
+            <i class="fa-solid fa-book"></i> New
+          </button>
+        </div>
+        <br />
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-bar"
+            placeholder="Find a Repository..."
+          />
+        </div>
+        <br />
+
+        <div class="repository-list">
+          <div class="repository-item">
+            <h3>GitHubUser/Crypto-Trends</h3>
+          </div>
+          <div class="repository-item">
+            <h3>GitHubUser/Tailwind-CSS-Templates</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Vertical Divider -->
+      <div class="divider"></div>
+
+      <!-- Right Section: Trending Repositories -->
+      <section class="trending-repositories">
+        <h2>Home</h2>
+
+        <div class="trending-header">
+          <i class="fa-solid fa-chart-line"></i>
+          <h4>
+            Trending Repositories &middot;
+            <span style="color: blue">See more</span>
+          </h4>
+        </div>
+        <br />
+
+        <div class="trending-item">
+          <h3>Genesis-Embodied-AI/Personal-Portfolio</h3>
+          <p>
+            A portfolio website showcasing front-end and back-end development
+            projects, built with Next.js.
+          </p>
+          <div><i class="fa-regular fa-star"></i> 14k</div>
+        </div>
+        <div class="trending-item">
+          <h3>comet-ml/Weather-Forecast-App</h3>
+          <p>
+            A weather application that provides real-time forecasts and climate
+            data using open APIs.
+          </p>
+          <div><i class="fa-regular fa-star"></i> 8k</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 GitHub Clone. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
