@@ -13,6 +13,62 @@
     />
   </head>
   <body>
+    <!-- Add this right after the body tag opens, before the header -->
+    <div class="sidebar-menu">
+      <div class="sidebar-header">
+        <img
+          src="/github-mark-white.svg"
+          alt="GitHub Logo"
+          class="sidebar-logo"
+        />
+        <button class="close-sidebar">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-exclamation-circle"></i>
+          <span>Issues</span>
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-code-branch"></i>
+          <span>Pull requests</span>
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-project-diagram"></i>
+          <span>Projects</span>
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-comments"></i>
+          <span>Discussions</span>
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-laptop-code"></i>
+          <span>Codespaces</span>
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-robot"></i>
+          <span>Copilot</span>
+        </a>
+
+        <div class="sidebar-divider"></div>
+
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-compass"></i>
+          <span>Explore</span>
+        </a>
+        <a href="#" class="sidebar-item">
+          <i class="fas fa-store"></i>
+          <span>Marketplace</span>
+        </a>
+      </nav>
+    </div>
+
     <!-- Navbar -->
     <header class="navbar">
       <div class="navbar-left">
@@ -73,65 +129,128 @@
 
     <!-- Main Content -->
     <main class="main-content">
-      <!-- Left Section: Saved Repositories -->
+      <!-- Left Section: Top Repositories -->
       <section class="saved-repositories">
         <div class="section-header">
-          <h2>Top Repositories</h2>
+          <h2>Top repositories</h2>
           <button class="new-button">
-            <i class="fa-solid fa-book"></i> New
+            <i class="fa-regular fa-square"></i> New
           </button>
         </div>
-        <br />
-        <div class="search-container">
+        <div class="search-container repository-search">
           <input
             type="text"
             class="search-bar"
-            placeholder="Find a Repository..."
+            placeholder="Find a repository..."
           />
         </div>
-        <br />
 
         <div class="repository-list">
-          <div class="repository-item">
-            <h3>GitHubUser/Crypto-Trends</h3>
-          </div>
-          <div class="repository-item">
-            <h3>GitHubUser/Tailwind-CSS-Templates</h3>
-          </div>
+          <a href="#" class="repository-item">
+            <img
+              src="https://avatars.githubusercontent.com/u/583231?s=16&v=4"
+              class="repo-avatar"
+              alt=""
+            />
+            <span>salman2843/JS-Projects</span>
+          </a>
+          <a href="#" class="repository-item">
+            <img
+              src="https://avatars.githubusercontent.com/u/583231?s=16&v=4"
+              class="repo-avatar"
+              alt=""
+            />
+            <span>salman2843/React-Projects-Hub</span>
+          </a>
+          <a href="#" class="repository-item">
+            <img
+              src="https://avatars.githubusercontent.com/u/583231?s=16&v=4"
+              class="repo-avatar"
+              alt=""
+            />
+            <span>salman2843/Hotel-booking</span>
+          </a>
+          <a href="#" class="repository-item">
+            <img
+              src="https://avatars.githubusercontent.com/u/583231?s=16&v=4"
+              class="repo-avatar"
+              alt=""
+            />
+            <span>salman2843/temp</span>
+          </a>
+          <a href="#" class="repository-item">
+            <img
+              src="https://avatars.githubusercontent.com/u/583231?s=16&v=4"
+              class="repo-avatar"
+              alt=""
+            />
+            <span>salman2843/GitHub-HomePage</span>
+          </a>
+          <a href="#" class="repository-item">
+            <img
+              src="https://avatars.githubusercontent.com/u/583231?s=16&v=4"
+              class="repo-avatar"
+              alt=""
+            />
+            <span>salman2843/js-topics</span>
+          </a>
         </div>
       </section>
 
-      <!-- Vertical Divider -->
-      <div class="divider"></div>
-
-      <!-- Right Section: Trending Repositories -->
-      <section class="trending-repositories">
-        <h2>Home</h2>
-
-        <div class="trending-header">
-          <i class="fa-solid fa-chart-line"></i>
-          <h4>
-            Trending Repositories &middot;
-            <span style="color: blue">See more</span>
-          </h4>
+      <!-- Right Section: Home Feed -->
+      <section class="home-feed">
+        <!-- Copilot Section -->
+        <div class="copilot-section">
+          <input type="text" placeholder="Ask Copilot" class="copilot-input" />
+          <div class="quick-actions">
+            <button class="action-button">
+              <i class="fas fa-tag"></i> Latest nodejs/node release
+            </button>
+            <button class="action-button">
+              <i class="far fa-question-circle"></i> What can I do here?
+            </button>
+            <button class="action-button">
+              <i class="far fa-lightbulb"></i> How can you help?
+            </button>
+          </div>
         </div>
-        <br />
 
-        <div class="trending-item">
-          <h3>Genesis-Embodied-AI/Personal-Portfolio</h3>
-          <p>
-            A portfolio website showcasing front-end and back-end development
-            projects, built with Next.js.
-          </p>
-          <div><i class="fa-regular fa-star"></i> 14k</div>
+        <!-- Home Feed Header -->
+        <div class="feed-header">
+          <h2>Home</h2>
+          <button class="filter-button">
+            <i class="fas fa-filter"></i> Filter
+          </button>
         </div>
-        <div class="trending-item">
-          <h3>comet-ml/Weather-Forecast-App</h3>
-          <p>
-            A weather application that provides real-time forecasts and climate
-            data using open APIs.
-          </p>
-          <div><i class="fa-regular fa-star"></i> 8k</div>
+
+        <!-- Feed Items -->
+        <div class="feed-items">
+          <!-- Repository Creation Item -->
+          <div class="feed-item">
+            <div class="feed-item-header">
+              <img src="path-to-avatar" class="user-avatar" alt="" />
+              <span class="username">basit1215</span>
+              <span class="action">created a repository</span>
+              <span class="timestamp">8 hours ago</span>
+            </div>
+            <div class="repository-card">
+              <div class="repo-info">
+                <img src="path-to-avatar" class="repo-avatar" alt="" />
+                <span class="repo-name">basit1215/Backend-Practice</span>
+              </div>
+              <div class="repo-meta">
+                <span class="language">
+                  <span class="language-dot"></span>
+                  JavaScript
+                </span>
+              </div>
+              <button class="star-button">
+                <i class="far fa-star"></i> Star
+              </button>
+            </div>
+          </div>
+
+          <!-- Add more feed items as needed -->
         </div>
       </section>
     </main>
@@ -140,5 +259,8 @@
     <footer class="footer">
       <p>&copy; 2024 GitHub Clone. All rights reserved.</p>
     </footer>
+
+    <!-- Add this right before the closing body tag -->
+    <script src="script.js"></script>
   </body>
 </html>
